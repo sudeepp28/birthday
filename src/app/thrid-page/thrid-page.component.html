@@ -1,0 +1,23 @@
+<div class="bg">
+    <div class="cake-container" (click)="launchSprinkles()">
+        <div class="cake-layer candle">
+            <div class="flame"></div>
+        </div>
+  <div class="cake-layer layer1"></div>
+  <div class="cake-layer layer2">click me</div>
+  <div class="cake-layer layer3"></div>
+
+ 
+</div>
+@if(isbutton){
+     <button (click)="goTo()" >
+       Go Ahead →
+    </button>
+}
+ 
+ <div class="sprinkles" *ngIf="showSprinkles">
+   
+    <div *ngFor="let s of sprinkleArray" class="sprinkle" [ngStyle]="s.style"></div>
+  </div>
+</div>
+

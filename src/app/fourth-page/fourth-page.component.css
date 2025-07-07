@@ -1,0 +1,52 @@
+.birthday-container {
+  height: 100vh;
+  background: #111;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+button {
+  margin-top: 20px;
+  padding: 10px 25px;
+  background: #ff4081;
+  border: none;
+  color: white;
+  border-radius: 25px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background: #ff1e70;
+}
+
+.glow-text {
+  font-size: 3rem;
+  background: linear-gradient(45deg, #f0f, #ff0);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: glow 1.5s infinite alternate;
+}
+
+@keyframes glow {
+  from {
+    text-shadow: 0 0 10px #f0f, 0 0 20px #ff0;
+  }
+  to {
+    text-shadow: 0 0 20px #f0f, 0 0 30px #ff0;
+  }
+}
+.wish-text {
+  max-width: 800px;
+  margin: 20px auto;
+  font-size: 1.2rem;
+  line-height: 1.8;
+  padding: 0 20px;
+  color: #ffe;
+  text-shadow: 0 0 2px #000;
+}

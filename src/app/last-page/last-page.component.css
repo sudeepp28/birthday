@@ -1,0 +1,50 @@
+.bg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: #0e0e0e;
+  text-align: center;
+  padding: 20px;
+  color: white;
+}
+
+.con {
+  max-width: 600px;
+}
+
+.icon-link {
+  font-size: 3rem;
+  color: #e1306c;
+  transition: transform 0.3s ease;
+
+  &:hover {
+    transform: scale(1.2);
+    color: #ff69b4;
+  }
+}
+
+h3 {
+  margin: 20px 0;
+  font-size: 1.4rem;
+}
+
+.video-btn {
+  padding: 12px 24px;
+  font-size: 1.1rem;
+  border: none;
+  background: linear-gradient(to right, #ff416c, #ff4b2b);
+  color: white;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.video-btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 15px #ff69b4;
+}
+
+.con i {
+     font-size: 50px;
+}

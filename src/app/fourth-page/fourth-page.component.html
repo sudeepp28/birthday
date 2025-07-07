@@ -1,0 +1,31 @@
+<div class="birthday-container">
+  <!-- Initial content: Heading + Button -->
+@if(!lightsOn){
+      <div  class="lights-off">
+    <h1>Turn on the lights 🎉</h1>
+    <button (click)="turnOnLights()">Click Me</button>
+  </div>
+}
+
+  <!-- Final content: Birthday Message -->
+ @else {
+     <div  class="birthday-message">
+    
+    <h1>🎂</h1>    <h1 class="glow-text"> Happy Birthday, My Dearest Sister! </h1>
+    <h1>💖</h1>
+    <p class="wish-text">
+      On this special day, I want you to know how deeply you are loved.
+      You’ve always been  my secret keeper, my forever friend.
+      May your birthday be filled with magic, sparkle, laughter, and memories that last forever.
+      Keep shining bright, keep smiling, and never stop dreaming. 💫
+      <br/><br/>
+      Here's to a year full of joy, surprises, growth, and endless love. 🥳✨
+      You deserve the world — and then some. 💞
+    </p>
+  </div>
+   <button (click)="goTo()" >
+       Last →
+    </button>
+
+ }
+</div>
