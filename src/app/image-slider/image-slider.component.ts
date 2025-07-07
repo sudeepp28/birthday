@@ -16,6 +16,7 @@ export class ImageSliderComponent implements AfterViewInit {
     { src: 'assets/solo 1.jpeg', message: '30-Jan-2k25' },
     {src:'assets/solo 2.jpeg', message:'sundar'},
     {src:'assets/us 3.jpeg', message:'Smart to hu mai '},
+     {src:'assets/us 4.jpeg', message:'Best '},
     {src:'assets/solo 3.jpeg', message:'cute'},
  {src:'assets/solo 4.jpeg', message:'Fav  Atisundar'},
  {src:'assets/solo 5.jpeg', message:'16-june-2k25'},
