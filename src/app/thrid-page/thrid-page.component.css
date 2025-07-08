@@ -41,7 +41,8 @@
   width: 15px;
   height: 15px;
   background: radial-gradient(circle, #ffd700 40%, #ffa500 60%, transparent 80%);
-  border-radius: 50%;
+  /* border-radius: 50%; */
+  clip-path: polygon(50% 0%, 74% 38%, 75% 63%, 73% 76%, 58% 100%, 40% 100%, 23% 76%, 22% 63%, 23% 38%);
   animation: flicker 0.15s infinite alternate;
   box-shadow: 0 0 10px 3px rgba(255, 215, 0, 0.5);
 }
