@@ -4,7 +4,7 @@
             <div class="flame"></div>
         </div>
   <div class="cake-layer layer1"></div>
-  <div class="cake-layer layer2">click me</div>
+  <div class="cake-layer layer2">{{isbutton? 'Bhindi':'click me'}}</div>
   <div class="cake-layer layer3"></div>
 
  
@@ -15,6 +15,11 @@
     </button>
 }
  
+@if(isbutton){
+  <h1 class="drop-text happy" >Happy</h1>
+  <h1 class="drop-text Birthday"  >Birthday</h1>
+  
+}
  <div class="sprinkles" *ngIf="showSprinkles">
    
     <div *ngFor="let s of sprinkleArray" class="sprinkle" [ngStyle]="s.style"></div>

@@ -115,3 +115,44 @@
   transform: scale(1.05);
   box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3);
 }
+
+.drop-text {
+  /* position: absolute;
+  top: 30px;
+ 
+  transform: translateX(-50%); */
+  
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #f54d4d;
+}
+
+.happy{
+  position: absolute;
+  left:10%;
+  top: 5%;
+  animation: moveRight 1s ease-in-out 
+}
+.Birthday{
+  position: absolute;
+  right: 10%;
+  top: 15%;
+  animation: moveLeft 1s ease-in-out 
+}
+
+@keyframes moveRight {
+  0%{
+    left:-20%
+  }
+  100%{
+    left:10%
+  }
+} 
+@keyframes moveLeft {
+  0%{
+    right: -20%;
+  }
+  100%{
+    right: 10%;
+  }
+}
