@@ -143,17 +143,21 @@
 
 @keyframes moveRight {
   0%{
-    left:-20%
+    left:-20%;
+    opacity: 0;
   }
   100%{
-    left:10%
+    left:10%;
+    opacity: 1;
   }
 } 
 @keyframes moveLeft {
   0%{
     right: -20%;
+    opacity: 0;
   }
   100%{
     right: 10%;
+    opacity: 1;
   }
 }
