@@ -11,17 +11,25 @@ export class ImageSliderComponent implements AfterViewInit {
   @ViewChildren('captionText') captionTextRefs!: QueryList<ElementRef>;
 
   images = [
-    { src: 'assets/us 1.jpeg', message: 'Our first photo together!' },
-    { src: 'assets/us 2.jpeg', message: 'Rakhi 2K24' },
-    { src: 'assets/solo 1.jpeg', message: '30-Jan-2k25' },
-    {src:'assets/solo 2.jpeg', message:'sundar'},
-    {src:'assets/us 3.jpeg', message:'Smart to hu mai '},
-     {src:'assets/us 4.jpeg', message:'Best '},
-    {src:'assets/solo 3.jpeg', message:'cute'},
- {src:'assets/solo 4.jpeg', message:'Fav  Atisundar'},
- {src:'assets/solo 5.jpeg', message:'16-june-2k25'},
-  {src:'assets/solo 6.jpeg', message:'16-june-2k25'},
-  {src:'assets/last.jpeg', message:'Happy birthday Bhindi'},
+    { src: 'assets/us 1.jpeg', message: 'Our first photo together!',type:'image' },
+    { src: 'assets/us 2.jpeg', message: 'Rakhi 2K24',type:'image' },
+    { src: 'assets/solo 1.jpeg', message: '30-Jan-2k25' ,type:'image'},
+    {src:'assets/solo 2.jpeg', message:'sundar',type:'image'},
+    {src:'assets/us 3.jpeg', message:'Smart to hu mai ',type:'image'},
+     {src:'assets/us 4.jpeg', message:'Best ',type:'image'},
+    {src:'assets/solo 3.jpeg', message:'cute',type:'image'},
+    {src:'assets/solo 8.jpeg', message:'Mathura 2k23', type:'image'},
+ {src:'assets/solo 4.jpeg', message:'Fav  Atisundar',type:'image'},
+    { src: 'assets/us 5.jpeg', message: 'Rakhi 2k23' ,type:'image'},
+    { src: 'assets/us 6.jpeg', message: 'Diwali 2k24' ,type:'image'},
+     {src:'assets/aaloo.jpeg', message:'Aaloo ',type:'image'},
+      {src:'assets/solo 9.jpeg', message:'chuiya', type:'image'},
+ {src:'assets/solo 5.jpeg', message:'16-june-2k25',type:'image'},
+  {src:'assets/solo 6.jpeg', message:'16-june-2k25',type:'image'},
+   {src:'assets/solo 10.jpeg', message:'cute', type:'image'},
+  {src:'assets/solo 7.jpeg', message:'cute', type:'image'},
+  { src: 'assets/us 7.jpeg', message: 'feb 2k23' ,type:'image'},
+  {src:'assets/last.jpeg', message:'Happy birthday Bhindi',type:'image'},
   ];
 
   currentIndex = 0;
