@@ -45,6 +45,8 @@ export class ThridPageComponent {
   }
 
   goTo(){
+     this.audio.pause();        // 🔇 Stop the sound
+    this.audio.currentTime = 0;
     this.router.navigate(['/fourth'])
   }
   isbutton=false
@@ -54,7 +56,11 @@ blowCandle() {
   this.isBlown = true;
   this.blowButton=false
   this.launchSprinkles()
+    this.audio.play();
+    this.audio.loop = false;
 }
 blowButton=true
+
+audio=new Audio('assets/birthdayMusic.mp3')
   
 }
