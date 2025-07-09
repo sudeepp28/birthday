@@ -53,6 +53,7 @@ export class ThridPageComponent {
 blowCandle() {
   this.isBlown = true;
   this.blowButton=false
+  this.launchSprinkles()
 }
 blowButton=true
   
