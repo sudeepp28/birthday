@@ -49,6 +49,7 @@
 @media (max-width: 600px) {
   .swiper-container {
     height: 600px;
+    width: 100%;
   }
 
   .nav {
