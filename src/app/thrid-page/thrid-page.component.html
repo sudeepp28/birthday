@@ -2,8 +2,9 @@
     <div class="cake-container" (click)="launchSprinkles()">
        @if(isbutton){
          <div class="cake-layer candle">
-            <div class="flame"></div>
+            <div class="flame" [class.blow-out]="isBlown"></div>
         </div>
+       
        }
   <div class="cake-layer layer1"></div>
   <div class="cake-layer layer2">{{isbutton? 'Bhindi':'click me'}}</div>
@@ -12,9 +13,15 @@
  
 </div>
 @if(isbutton){
-     <button (click)="goTo()" >
+   @if(blowButton){
+      <button (click)="blowCandle()">Blow Candle</button>
+    }
+    @else {
+       <button (click)="goTo()" >
        Go Ahead →
     </button>
+    }
+   
 }
  
 @if(isbutton){
@@ -27,4 +34,5 @@
     <div *ngFor="let s of sprinkleArray" class="sprinkle" [ngStyle]="s.style"></div>
   </div>
 </div>
+
 

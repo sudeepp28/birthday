@@ -48,5 +48,12 @@ export class ThridPageComponent {
     this.router.navigate(['/fourth'])
   }
   isbutton=false
+  isBlown = false;
+
+blowCandle() {
+  this.isBlown = true;
+  this.blowButton=false
+}
+blowButton=true
   
 }

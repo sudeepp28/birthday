@@ -45,6 +45,18 @@
   clip-path: polygon(50% 0%, 74% 38%, 75% 63%, 73% 76%, 58% 100%, 40% 100%, 23% 76%, 22% 63%, 23% 38%);
   animation: flicker 0.15s infinite alternate;
   box-shadow: 0 0 10px 3px rgba(255, 215, 0, 0.5);
+   animation: flicker 0.3s infinite;
+}
+
+@keyframes flicker {
+  0%   { transform: translateX(-50%) scale(1); opacity: 1; }
+  50%  { transform: translateX(-50%) scale(1.5); opacity: 0.8; }
+  100% { transform: translateX(-50%) scale(1); opacity: 1; }
+}
+.flame.blow-out {
+  opacity: 0;
+  transform: translateX(-50%) scale(0);
+  animation: none;
 }
 .layer1{
     width:45%

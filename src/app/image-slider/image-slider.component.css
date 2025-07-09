@@ -48,7 +48,7 @@
 
 @media (max-width: 600px) {
   .swiper-container {
-    height: auto;
+    height: 600px;
   }
 
   .nav {
@@ -64,7 +64,7 @@
   img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: contain;
   }
 
   .caption {
