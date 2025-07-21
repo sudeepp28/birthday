@@ -1,5 +1,10 @@
+.blank{
+  height: 60px;
+  background: #111;
+}
+
 .birthday-container {
-  height: 100vh;
+  min-height: 100vh;
   background: #111;
   color: #fff;
   display: flex;

@@ -1,13 +1,33 @@
-<div class="swiper-container">
-  <div class="swiper-wrapper" #slider>
-   @for(item of images;track item){
-     <div class="slide" >
-      <img [src]="item.src" [alt]="item.message" />
-      <p class="caption"><span #captionText></span></p>
-    </div>
-   }
+<div class="testimonial-container"
+(touchstart)="handleTouchStart($event)"
+     (touchend)="handleTouchEnd($event)">
+    
+  <div 
+    class="testimonial-slide" 
+    *ngFor="let t of testimonials; let i = index"
+    [class.active]="i === currentSlide"
+  >
+   
+    <img [src]="t.src" class="avatar" />
+    <p>{{t.message}}</p>
+   
+    
   </div>
 
+  <!-- Nav buttons -->
   <button class="nav prev" (click)="prevSlide()">&#10094;</button>
   <button class="nav next" (click)="nextSlide()">&#10095;</button>
+
+  <!-- Dots -->
+  <div class="dots">
+    <span 
+      class="dot" 
+     *ngFor="let t of testimonials; let j = index"
+
+      [class.active]="j === currentSlide"
+      (click)="goToSlide(j)"
+    ></span>
+  </div>
 </div>
+
+
